@@ -1,0 +1,369 @@
+/* Let's start with the Global Styles */
+body {
+    margin-left: -8px;
+    overflow-x: hidden;
+    font-family: 'Rubik', sans-serif;
+}
+.fira-font {
+    font-family: 'Fira Code', monospace;
+}
+.rubik-font {
+    font-family: 'Rubik', sans-serif;
+
+}
+.rubik-mono-font {
+    font-family: 'Rubik Mono One', sans-serif;
+}
+.center {
+    display: block;
+    margin: auto;
+}
+.hidden {
+    display: none;
+}
+a {
+    text-decoration: none;
+}
+.full-width {
+    width: 100vw;
+}
+.chunky {
+    font-weight: 900;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+    opacity: 0.3;
+}
+.portfolio-gradient {
+    background-image: linear-gradient(286.24deg, #690899 0.77%, #5C0699 26.56%, #4D0599 51.04%, #3A0699 74.48%, #200899 100%);
+}
+.green {
+    background-color: #00805B;
+}
+.blue {
+    background-color: #295785;
+}
+.purple {
+    background-color: #775DBF;
+}
+
+/* Local Styles */
+/* Header and Nav */
+header {
+    position: sticky;
+    position: -webkit-sticky;
+    overflow-x: hidden;
+    top: 0;
+    z-index: 1000;
+}
+nav {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-content: center;
+    font-family: 'Rubik', sans-serif;
+    backdrop-filter: blur(4px);
+    transition-duration: 0.5s;
+}
+nav a {
+    color: white;
+    cursor: pointer;
+}
+.nav-left {
+    display: grid;
+    align-content: center;
+    padding-left: 100px;
+}
+.nav-logo {
+    font-size: 90px;
+    line-height: 107px;
+    padding-top: 0;
+}
+.nav-right {
+    display: grid;
+    align-content: center;
+    justify-content: right;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 24px;
+    padding-right: 100px;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.nav-link {
+    width: 154px;
+    padding-top: 22px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid transparent;
+    transition-duration: .25s;
+}
+.nav-link:hover {
+    /*background-color: rgba(243, 243, 243, 0.6);*/
+    border-bottom: 2px solid white;
+}
+.nav-link:active {
+    border-bottom: 2px solid white;
+}
+.contact-nav-link {
+    width: 150px;
+    margin-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #690899;
+    font-weight: 500;
+    border: 2px solid transparent;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 0px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 25px;
+    transition-duration: .25s;
+}
+.contact-nav-link:hover {
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5), 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.highlighted {
+    border-bottom: 2px solid white;
+}
+
+/* landing */
+.landing {
+    height: 110vh;
+    margin-top: -130px;
+    padding-top: 0px;
+    background-image: linear-gradient(rgba(32,13,128,0.9), rgba(32,13,128,1));
+}
+.landing-top {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    background-image: linear-gradient(286.24deg, #690899 0.77%, #5C0699 26.56%, #4D0599 51.04%, #3A0699 74.48%, #200899 100%);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 320px 0px;
+    color: white;
+}
+.greeting {
+    width: 941px;
+    padding-top: 150px;
+    font-size: 26px;
+    line-height: 31px;
+}
+.codey-albers {
+    width: 698px;
+    height: auto;
+}
+.scroll-message {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 15px;
+    line-height: 17px;
+    margin-bottom: 0;
+}
+.down-arrow {
+    width: 60px;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* skills Section */
+.skills {
+    padding: 250px 0px;
+}
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 100px;
+}
+.skills-heading {
+    margin-bottom: 10px;
+}
+.skills-container h3 {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 40px;
+    color: #403D4D;
+}
+.skills-container p {
+    font-size: 24px;
+    line-height: 28px;
+    color: #403D4D;
+}
+.skills-left p {
+    margin-bottom: 12px;
+    max-width: 200px
+}
+.skills-right p {
+    max-width: 660px;
+    margin-bottom: 40px;
+}
+.figma, .html, .javascript, .adobe {
+    display: flex;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+.check-circle {
+    width: 18px;
+    height: auto;
+    padding-top: 28px;
+    padding-right: 10px;
+}
+.progress-bar {
+    width: 200px;
+    height: 10px;
+    margin: 0 0 20px 28px;
+    background: #BF7EE5;
+    border-radius: 6px;
+}
+.code {
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+    font-family: 'Fira Code', monospace;
+    font-size: 29px;
+    line-height: 38px;
+    text-align: center;
+    color: #690899;
+}
+.blinky {
+    width: 30px;
+    height: 40px;
+    margin-top: 25px;
+    margin-left: 5px;
+    background-color: #2E1D88;
+    animation-name: blinky;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes blinky {
+    0% {background-color: #2E1D88;}
+    50% {background-color: #2E1D88;}
+    60% {background-color: white;}
+    100% {background-color: white;}
+}
+  
+  /* Standard syntax */
+@keyframes blinky {
+    0% {background-color: #2E1D88;}
+    50% {background-color: #2E1D88;}
+    60% {background-color: white;}
+    100% {background-color: white;}
+}
+
+.codepen {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 15px;
+    line-height: 17px;
+    text-align: center;
+    color: #403D4C;
+    margin-bottom: 100px;
+}
+.codepen:hover {
+    text-decoration: underline;
+}
+.work-together {
+    width: 536px;
+    padding: 23px 0;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-image: linear-gradient(286.24deg, #690899 0.77%, #5C0699 26.56%, #4D0599 51.04%, #3A0699 74.48%, #200899 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 0px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 0 25px;
+    transition-duration: 0.6s;
+}
+.work-together:hover {
+    background-image: none;
+    background-color: #200899;
+}
+
+/* Designs Section */
+.samples-container {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.sample-screenshot {
+    width: 658px;
+    height: 464px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25), 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+.cta {
+    width: 321px;
+    left: 370px;    
+    margin-top: 196px;
+    padding: 23px 0;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 0px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+}
+
+.centsible {
+    height: 110vh;
+    padding: 100px;
+    text-align: right;
+    background-image: linear-gradient(90deg, #00805B 50%, white 50%);
+}
+.centsible-heading, .agb-heading {
+    margin-top: 100px;
+}
+.centsible .cta {
+    color: #00805B;
+}
+
+.agb {
+    height: 110vh;
+    padding: 100px;
+    background-image: linear-gradient(90deg, white 50%, #295785 50%);
+}
+.agb .cta {
+    color: #295785;
+}
+
+.finish-it {
+    height: 110vh;
+    padding: 100px;
+    text-align: right;
+    background-image: linear-gradient(90deg, #775DBF 50%, white 50%);
+}
+.finish-it-heading {
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+.finish-it .cta {
+    color: #775DBF;
+}
+#disabled-btn {
+    height: 26px;
+    cursor: not-allowed;
+    background-color: #DEDAE9;
+    box-shadow: none;
+}
+
+/* Contact */
+.contact {
+    margin-top: 300px;
+
+}
+.contact p {
+    width: 605px;
+    margin-top: 68px;
+    font-size: 26px;
+    line-height: 31px;
+}

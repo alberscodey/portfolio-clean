@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Codey Albers Portfolio</title>
+        <link href="https://fonts.googleapis.com/css?family=Fira+Code|Rubik+Mono+One|Rubik:400,500,700,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+        <script type="text/javascript" src="highlightNavFunctions.js" async></script>
+        <script type="text/javascript" src="scrollFunctions.js" async></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <header class="full-width">
+        <nav class="full-width" id="nav">
+            <div class="nav-left">
+                <a class="nav-logo chunky" onclick="goHome()">C</a>
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li><a onclick="goSkills()"><div class="nav-link skills-nav-link" id="skills-nav-element">skills</div></a></li>
+                    <li><a onclick="goDesigns()"><div class="nav-link designs-nav-link" id="designs-nav-element">designs</div></a></li>
+                    <li><a onclick="goContact()"><div class="contact-nav-link">hire me</div></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <body>
+
+        <div class="landing full-width" id="home">
+            <div class="landing-top">
+                <h1 class="hidden">codey albers</h1>
+                <p class="greeting center">Hi there. I’m a Boston-based UI designer. Websites and web apps are my forte, but I dabble in mobile as well.</p>
+                <img class="codey-albers center" src="Images/codey-albers.png">
+                <p class="scroll-message center">Scroll down to view my skills and recent projects</p>
+                <img class="down-arrow center" src="Images/down-arrow.png">
+            </div>
+        </div>
+
+        <div class="skills full-width" id="skills" onmouseover="enterSkills()" onmouseout="exitSkills()">
+
+            <div class="skills-container">
+                
+                <div class="skills-left">
+
+                    <img class="skills-heading" src="Images/skills-heading.png">
+
+                    <div class="figma">
+                        <div class="check-container">
+                            <img class="check-circle" src="Images/check-circle.png">
+                        </div>
+                        <p>figma/sketch</p>
+                    </div>
+                    <div class="progress-bar">
+                        <div id="figma-progress"></div>
+                    </div>
+
+                    <div class="html">
+                        <div class="check-container">
+                                <img class="check-circle" src="Images/check-circle.png">
+                        </div>
+                        <p>html/css</p>
+                    </div>
+                    <div class="progress-bar">
+                        <div id="html-progress"></div>
+                    </div>
+                
+
+                    <div class="javascript">
+                        <div class="check-container">
+                            <img class="check-circle" src="Images/check-circle.png">
+                        </div>
+                        <p>javascript</p>
+                    </div>
+                    <div class="progress-bar">
+                        <div id="javascript-progress"></div>
+                    </div>
+
+                    <div class="adobe">
+                        <div class="check-container">
+                            <img class="check-circle" src="Images/check-circle.png">
+                        </div>
+                        <p>adobe creative suite</p>
+                    </div>
+                    <div class="progress-bar">
+                        <div id="adobe-progress"></div>
+                    </div>
+                    
+                
+                </div>
+
+                <div class=skills-center>
+                    <img title="Codey Albers" alt="An image of Codey Albers" src="Images/codey-pic.png">
+                </div>
+
+                <div class="skills-right">
+                    <h3>That’s me. I want to work with you.</h3>
+                    <p>Although I’m still accepting clients for occasional freelance work, I’m actively hunting for a <a class="boldify">full-time remote position.</a></p>
+                    <p>I make all my initial designs in Figma, but am familiar with similar design apps, like Sketch.</p>
+                    <p>I started out from a development background, so I know HTML, CSS, and JavaScript. I usually end up coding my designs myself.</p>
+                    <p>I also have experience working with such adobe products as photoshop, illustrator, and indesign.</p>
+                </div>
+
+            </div>
+
+            <div class="code">
+                <p>_Did I mention I write my own code</p>
+                <div class="blinky"></div>
+            </div>
+            
+            <a class="codepen center" href="https://codepen.io/alberscodey" target="_blank"><p>check out my codepen profile</p></a>
+
+            <a href="contact"><div class="work-together center">let's work together</div></a>
+
+        </div>
+
+        <div class="full-width" id="designs" onmouseover="enterDesigns()" onmouseout="exitDesigns()">
+
+            <div class="centsible" id="centsible"onmouseover="enterCentsible()" onmouseout="exitCentsible()">
+
+                <img class="centsible-heading" src="Images/Centsible-Heading.png">
+
+                <div class="samples-container">
+                    <a href="#" target="_blank"><div class="website-link cta">visit the website</div></a>
+                    <img class="sample-screenshot" alt="A screenshot of Centsible Spending Solutions' website." src="Images/Centsible.png">
+                    <a href="#"><div class="case-study-link cta">read the case study</div></a>
+                </div>
+
+            </div>
+
+            <div class="agb" id="agb" onmouseover="enterAGB()" onmouseout="exitAGB()">
+
+                <img class="agb-heading" src="Images/AGB-Heading.png">
+    
+                <div class="samples-container">
+                    <a href="#" target="_blank"><div class="website-link cta">visit the website</div></a>
+                    <img class="sample-screenshot" alt="A screenshot of Awesome Gift Baskets' website." src="Images/AGB.png">
+                    <a href="#"><div class="case-study-link cta">read the case study</div></a>
+                </div>
+    
+            </div>
+
+            <div class="finish-it" id="finish-it" onmouseover="enterFinishIt()" onmouseout="exitFinishIt()">
+
+                <img class="finish-it-heading" src="Images/Finish-it-Heading.png">
+    
+                <div class="samples-container">
+                    <div class="cta" id="disabled-btn">visit the website</div>
+                    <img class="sample-screenshot" alt="A screenshot of Finish.it's website." src="Images/finish-it.png">
+                    <a href="#"><div class="case-study-link cta">read the case study</div></a>
+                </div>
+    
+            </div>
+
+        </div>
+
+        <div class="contact full-width" id="contact" onmouseover="enterContact()" onmouseout="exitContact()">
+            <img class="contact-heading center" src="Images/contact-heading.png">
+            <p class="center">If you like what you see, I’d love to work with you! Drop a line and I’ll get back to you within 24 hours.</p>
+            <form class="center">
+
+            </form>
+        </div>
+
+    </body>
+
+</html>
