@@ -98,6 +98,9 @@ nav ul {
 .nav-link:active {
     border-bottom: 2px solid white;
 }
+.highlighted {
+    border-bottom: 2px solid white;
+}
 .contact-nav-link {
     width: 150px;
     margin-left: 50px;
@@ -107,16 +110,45 @@ nav ul {
     color: #690899;
     font-weight: 500;
     border: 2px solid transparent;
-    background: #FFFFFF;
+    background-color: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 0px 4px rgba(0, 0, 0, 0.2);
     border-radius: 0px 25px;
     transition-duration: .25s;
 }
 .contact-nav-link:hover {
+    background-color: #d6d6d6;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5), 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
-.highlighted {
-    border-bottom: 2px solid white;
+.contact-nav-link:active {
+    background-color: #d6d6d6;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5), 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Floating Social Buttons */
+.social-container {
+    position: fixed;
+    right: 25px;
+    margin-top: 55vh;
+    z-index: 999;
+}
+.social {
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2), 0px 0px 4px rgba(0, 0, 0, 0.3);
+}
+.dribbble-logo {
+    height: 40px;
+    width: auto;
+}
+.codepen-logo {
+    height: 50px;
+    width: auto;
 }
 
 /* landing */
@@ -282,7 +314,7 @@ nav ul {
     text-decoration: underline;
 }
 .work-together {
-    width: 536px;
+    width: 660px;
     padding: 23px 0;
     text-align: center;
     font-family: 'Rubik', sans-serif;
@@ -295,6 +327,7 @@ nav ul {
     background-image: linear-gradient(286.24deg, #690899 0.77%, #5C0699 26.56%, #4D0599 51.04%, #3A0699 74.48%, #200899 100%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 0px 4px rgba(0, 0, 0, 0.2);
     border-radius: 0 25px;
+    cursor: pointer;
     transition-duration: 0.6s;
 }
 .work-together:hover {
@@ -314,8 +347,7 @@ nav ul {
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25), 0px 0px 10px rgba(0, 0, 0, 0.25);
 }
 .cta {
-    width: 321px;
-    left: 370px;    
+    width: 321px;  
     margin-top: 196px;
     padding: 23px 0;
     font-family: 'Rubik', sans-serif;
@@ -328,6 +360,10 @@ nav ul {
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 0px 4px rgba(0, 0, 0, 0.2);
     border-radius: 50px;
+}
+.cta:hover {
+    background-color: #d6d6d6;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 4px rgba(0, 0, 0, 0.25);
 }
 
 .centsible {
@@ -375,11 +411,190 @@ nav ul {
 /* Contact */
 .contact {
     margin-top: 300px;
-
+    margin-bottom: 300px;
 }
 .contact p {
     width: 605px;
     margin-top: 68px;
     font-size: 26px;
     line-height: 31px;
+}
+
+footer {
+    padding: 100px;
+    margin-bottom: -100px;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(286.24deg, #690899 0.77%, #5C0699 26.56%, #4D0599 51.04%, #3A0699 74.48%, #200899 100%);;
+}
+
+/* Now for the fun part: Media Queries! */
+
+/* From Desktop to Laptop size, there's really only one thing that needs adjusted: the spacing in the "skills" section */
+@media (max-width: 1440px) {
+    .skills-right p {
+        max-width: 600px;
+    }
+    .work-together {
+        width: 600px;
+    }
+}
+
+/* Down to ipad pro size. Basically everything just needs to be smaller. */
+@media (max-width: 1024px) {
+    body  {
+        margin-left: 0;
+    }
+
+    /* Nav */
+    header {
+        position: absolute;
+    }
+    .nav-logo {
+        font-size: 75px;
+        line-height: 88px
+    }
+    .nav-left {
+        padding-left: 60px;
+    }
+    .nav-right {
+        font-size: 18px;
+        line-height: 22px;
+        padding-right: 60px;
+    }
+    .nav-link {
+        width: 140px;
+        padding-top: 17px;
+        padding-bottom: 15px;
+    }
+    .contact-nav-link {
+        width: 136px;
+        margin-left: 50px;
+        padding-top: 17px;
+        padding-bottom: 15px;
+    }
+
+    /* Landing */
+    .greeting {
+        width: 700px;
+        padding-top: 0px;
+        margin-bottom: 80px;
+    }
+    .codey-albers {
+        margin-top: 0px;
+        margin-bottom: 100px;
+    }
+    .scroll-message {
+        margin-top: 0px;
+    }
+
+    /* Social icons */
+    .social-container {
+        left: 40px;
+    }
+
+    /* Skills Section */
+    .skills-container {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .progress-bar, .progress {
+        display: none;
+    }
+    .skills-right {
+        display: block;
+        margin: auto;
+        padding-top: 100px;
+    }
+    .codepen {
+        text-decoration: underline;
+    }
+
+    /* Designs Section */
+    .samples-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: space-around;
+    }
+    .centsible, .agb, .finish-it {
+        height: 100vh;
+        padding-bottom: 0;
+    }
+    .centsible-heading, .agb-heading, .finish-it-heading {
+        width: 400px;
+        height: auto;
+        padding-top: 0;
+        margin-bottom: 0;
+    }
+    .cta {
+        width: 800px;
+    }
+    .website-link, #disabled-btn {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .case-study-link {
+        margin-top: 60px;
+    }
+    .sample-screenshot {
+        display: block;
+        margin: auto;
+    }
+
+}
+ /* Down to standart ipad size */
+@media (max-width: 770px) {
+
+    /* Landing */
+    .greeting {
+        width: 700px;
+        padding-top: 80px;
+        margin-bottom: 0;
+        font-size: 21px;
+        line-height: 26px;
+    }
+    .codey-albers {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .scroll-message {
+        margin-top: 0px;
+    }
+
+    /* Social icons */
+    .social-container {
+        left: 10px;
+    }
+
+    /* skills */
+    .skills-container {
+        justify-content: space-between;
+    }
+    .codey-pic {
+        width: 300px;
+        height: auto;
+    }
+
+    /* Designs */
+    .cta {
+        width: 600px;   
+        margin-top: 60px;
+    }
+
+    .centsible, .agb, .finish-it {
+        padding: 0px 60px 200px 60px;
+    }
+    .website-link, #disabled-btn {
+        margin-bottom: 60px;
+    }
+    .centsible-heading, .agb-heading, .finish-it-heading {
+        width: 300px;
+        height: auto;
+        padding-top: 60px;
+    }
+    .finish-it {
+        height: 115vh;
+    }
+
 }
