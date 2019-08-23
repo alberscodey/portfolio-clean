@@ -12,7 +12,7 @@
     </head>
 
     <header class="full-width">
-        <nav class="full-width" id="nav">
+        <nav class="full-width nav" id="nav">
             <div class="nav-left">
                 <a class="nav-logo chunky" onclick="goHome()">C</a>
             </div>
@@ -28,7 +28,7 @@
 
     <body>
 
-        <div class="landing full-width" id="home">
+        <div class="landing full-width" id="home" onmouseover="enterLanding()">
             <div class="landing-top">
                 <h1 class="hidden">codey albers</h1>
                 <p class="greeting center">Hi there. I’m a Boston-based UI designer. Websites and web apps are my forte, but I dabble in mobile as well.</p>
@@ -53,7 +53,7 @@
                         <p>figma/sketch</p>
                     </div>
                     <div class="progress-bar">
-                        <div id="figma-progress"></div>
+                        <div class="progress shrink" id="figma-progress"></div>
                     </div>
 
                     <div class="html">
@@ -63,7 +63,7 @@
                         <p>html/css</p>
                     </div>
                     <div class="progress-bar">
-                        <div id="html-progress"></div>
+                        <div class="progress shrink" id="html-progress"></div>
                     </div>
                 
 
@@ -74,7 +74,7 @@
                         <p>javascript</p>
                     </div>
                     <div class="progress-bar">
-                        <div id="javascript-progress"></div>
+                        <div class="progress shrink" id="javascript-progress"></div>
                     </div>
 
                     <div class="adobe">
@@ -84,7 +84,7 @@
                         <p>adobe creative suite</p>
                     </div>
                     <div class="progress-bar">
-                        <div id="adobe-progress"></div>
+                        <div class="progress shrink" id="adobe-progress"></div>
                     </div>
                     
                 
@@ -100,6 +100,7 @@
                     <p>I make all my initial designs in Figma, but am familiar with similar design apps, like Sketch.</p>
                     <p>I started out from a development background, so I know HTML, CSS, and JavaScript. I usually end up coding my designs myself.</p>
                     <p>I also have experience working with such adobe products as photoshop, illustrator, and indesign.</p>
+                    <a onclick="goContact()"><div class="work-together center">let's work together</div></a>
                 </div>
 
             </div>
@@ -111,7 +112,7 @@
             
             <a class="codepen center" href="https://codepen.io/alberscodey" target="_blank"><p>check out my codepen profile</p></a>
 
-            <a href="contact"><div class="work-together center">let's work together</div></a>
+            
 
         </div>
 

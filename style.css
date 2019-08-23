@@ -35,15 +35,7 @@ a {
 }
 .portfolio-gradient {
     background-image: linear-gradient(286.24deg, #690899 0.77%, #5C0699 26.56%, #4D0599 51.04%, #3A0699 74.48%, #200899 100%);
-}
-.green {
-    background-color: #00805B;
-}
-.blue {
-    background-color: #295785;
-}
-.purple {
-    background-color: #775DBF;
+    opacity: 0.85;
 }
 
 /* Local Styles */
@@ -101,7 +93,6 @@ nav ul {
     transition-duration: .25s;
 }
 .nav-link:hover {
-    /*background-color: rgba(243, 243, 243, 0.6);*/
     border-bottom: 2px solid white;
 }
 .nav-link:active {
@@ -215,9 +206,34 @@ nav ul {
     width: 200px;
     height: 10px;
     margin: 0 0 20px 28px;
-    background: #BF7EE5;
+    background-color: #BF7EE5;
     border-radius: 6px;
 }
+.shrink {
+    width: 0px;
+}
+.progress {
+    height: 10px;
+    background-color: #2911A6;
+    border-radius: 6px;
+}
+#figma-progress, #html-progress, #javascript-progress, #adobe-progress {
+    transition-delay: 0.6s;
+    transition-duration: 0.75s;
+}
+.figma-grow {
+    width: 200px;
+}
+.html-grow {
+    width: 170px;
+}
+.javascript-grow {
+    width: 150px;
+}
+.adobe-grow {
+    width: 150px;
+}
+
 .code {
     display: flex;
     justify-content: center;
@@ -316,7 +332,7 @@ nav ul {
 
 .centsible {
     height: 110vh;
-    padding: 100px;
+    padding: 100px 100px 200px;
     text-align: right;
     background-image: linear-gradient(90deg, #00805B 50%, white 50%);
 }
@@ -329,7 +345,7 @@ nav ul {
 
 .agb {
     height: 110vh;
-    padding: 100px;
+    padding: 100px 100px 200px;
     background-image: linear-gradient(90deg, white 50%, #295785 50%);
 }
 .agb .cta {
@@ -338,7 +354,7 @@ nav ul {
 
 .finish-it {
     height: 110vh;
-    padding: 100px;
+    padding: 100px 100px 200px;
     text-align: right;
     background-image: linear-gradient(90deg, #775DBF 50%, white 50%);
 }
