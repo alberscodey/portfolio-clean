@@ -35,7 +35,9 @@ a {
 }
 .portfolio-gradient {
     background-image: linear-gradient(286.24deg, #690899 0.77%, #5C0699 26.56%, #4D0599 51.04%, #3A0699 74.48%, #200899 100%);
-    opacity: 0.85;
+}
+.boldify {
+    font-weight: 700;
 }
 
 /* Local Styles */
@@ -117,11 +119,14 @@ nav ul {
 }
 .contact-nav-link:hover {
     background-color: #d6d6d6;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5), 0px 0px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 4px rgba(0, 0, 0, 0.25);
 }
 .contact-nav-link:active {
     background-color: #d6d6d6;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5), 0px 0px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+.nav-change {
+    background-color: rgba(0, 0, 0, 0.2);   
 }
 
 /* Floating Social Buttons */
@@ -365,6 +370,10 @@ nav ul {
     background-color: #d6d6d6;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 4px rgba(0, 0, 0, 0.25);
 }
+.cta:hover {
+    background-color: #d6d6d6;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
 
 .centsible {
     height: 110vh;
@@ -422,11 +431,21 @@ nav ul {
 
 footer {
     padding: 100px;
-    margin-bottom: -100px;
-    text-align: center;
     color: white;
-    background-image: linear-gradient(286.24deg, #690899 0.77%, #5C0699 26.56%, #4D0599 51.04%, #3A0699 74.48%, #200899 100%);;
+    background-image: linear-gradient(286.24deg, #690899 0.77%, #5C0699 26.56%, #4D0599 51.04%, #3A0699 74.48%, #200899 100%);
+    transform: translateY(10px);
 }
+
+/* Now for the Case Studies */
+/* Starting with Centsible */
+.centsible-case-study {
+    width: 50%;
+    padding-top: 150px;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+
 
 /* Now for the fun part: Media Queries! */
 
@@ -518,7 +537,7 @@ footer {
         align-content: space-around;
     }
     .centsible, .agb, .finish-it {
-        height: 100vh;
+        height: 110vh;
         padding-bottom: 0;
     }
     .centsible-heading, .agb-heading, .finish-it-heading {
@@ -543,6 +562,7 @@ footer {
     }
 
 }
+
  /* Down to standart ipad size */
 @media (max-width: 770px) {
 
@@ -585,6 +605,10 @@ footer {
     .centsible, .agb, .finish-it {
         padding: 0px 60px 200px 60px;
     }
+    .finish-it-heading {
+        margin-top: 150px;
+    }
+
     .website-link, #disabled-btn {
         margin-bottom: 60px;
     }
@@ -593,8 +617,262 @@ footer {
         height: auto;
         padding-top: 60px;
     }
-    .finish-it {
-        height: 115vh;
+}
+
+/* Larger Phones */
+@media (max-width: 420px) {
+    .nav-link {
+        display: none;
+    }
+    .nav-logo {
+        font-size: 65px;
+        line-height: 75px
+    }
+    .nav-left {
+        padding-left: 20px;
+    }
+    .nav-right {
+        font-size: 16px;
+        line-height: 20px;
+        padding-right: 20px;
+    }
+    .contact-nav-link {
+        width: 116px;
+        padding-top: 12px;
+        padding-bottom: 10px;
     }
 
+    .social-container {
+        padding-top: 250px;
+    }
+
+    .landing {
+        height: 120vh;
+    }
+    .greeting {
+        width: 390px;
+        padding-top: 150px;
+        margin-bottom: 0;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .codey-albers {
+        width: 360px;
+    }
+    .scroll-message {
+        display: none;
+    }
+    .landing-top {
+        border-radius: 0 0 180px 0;
+    }
+
+    .skills {
+        padding: 100px 0;
+    }
+    .skills-heading {
+        width: 200px;
+        height: auto;
+    }
+    .skills-container {
+        margin-left: 50px;
+        justify-content: center;
+    }
+    .skills-center {
+        margin-top: 60px;
+    }
+    .skills-right h3 {
+        font-size: 20px;
+        margin-bottom: 24px;
+    }
+    .skills-right {
+        padding-left: 40px;
+    }
+    .skills-right p {
+        width: 390px;
+        font-size: 16px;
+        line-height: 18px;
+        margin-bottom: 18px;
+    }
+    .work-together {
+        width: 390px;
+        font-size: 14px;
+        padding-top: 12px;
+        padding-bottom: 10px;
+    }
+    .code {
+        padding-top: 80px;
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .blinky {
+        width: 21px;
+        height: 28px;
+        margin-top: 7px;
+        margin-left: 5px;
+    }
+
+    .cta {
+        width: 390px;
+        font-size: 14px;
+        padding-top: 12px;
+        padding-bottom: 10px;
+    }
+    .centsible, .agb, .finish-it {
+        padding: 0 0 200px 0;
+    }
+    .centsible-heading, .agb-heading, .finish-it-heading {
+        width: 200px;
+        height: auto;
+    }
+    .finish-it-heading {
+        margin-top: 150px;
+    }
+    .sample-screenshot {
+        width: 390px;
+        height: auto;
+    }
+    .website-link, #disabled-btn {
+        margin-bottom: 60px;
+    }
+
+    .contact {
+        margin-top: 200px;
+        margin-bottom: 200px;
+    }
+    .contact-heading {
+        width: 200px;
+        height: auto;
+    }
+    .contact p {
+        width: 390px;
+        margin-top: 58px;
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .centsible-case-study {
+        font-size: 16px;
+        line-height: 18px;
+        width: 300px;
+    }
+    
+    footer {
+        padding: 100px 0px;
+        text-align: right;
+    }
+    footer p {
+        margin-right: 10px;
+    }
+}
+
+/* Mid-sized Phones */
+@media (max-width: 375px) {
+    .greeting {
+        width: 300px;
+    }
+    .codey-albers {
+        width: 250px;
+    }
+    .down-arrow {
+        width: 40px;
+        height: auto;
+    }
+
+    .skills-heading {
+        width: 150px;
+        height: auto;
+    }
+    .skills-right h3 {
+        font-size: 18px;
+    }
+    .skills-right p {
+        width: 355px;
+    }
+    .work-together {
+        width: 355px;
+    }
+    
+    .centsible, .agb, .finish-it {
+        height: 100vh;
+    }
+    .cta {
+        width: 355px;
+    }
+    .centsible-heading, .agb-heading, .finish-it-heading {
+        width: 150px;
+        height: auto;
+    }
+    .sample-screenshot {
+        width: 355px;
+    }
+
+    .contact-heading {
+        width: 150px;
+        height: auto;
+    }
+    .contact p {
+        width: 320px;
+    }
+}
+
+/* Small Phones*/
+@media (max-width: 320px) {
+    .landing {
+        height: 140vh;
+    }
+    .landing-top {
+        height: 115vh;
+    }
+    .greeting {
+        padding-top: 300px;
+    }
+
+    .skills-left p {
+        font-size: 16px;
+    }
+    .check-circle {
+        width: 16px;
+        height: auto;
+        padding-top: 22px;
+    }
+    .skills-right {
+        margin-left: 10px;
+    }
+    .skills-right h3 {
+        font-size: 17px;
+    }
+    .skills-right p {
+        width: 300px;
+    }
+    .work-together {
+        width: 300px;
+    }
+    .code {
+        font-size: 14px;
+    }
+    .blinky {
+        width: 15px;
+        height: 20px;
+        margin-top: 10px;
+    }
+    .codepen {
+        font-size: 12px;
+    }
+
+    .cta {
+        width: 300px;
+    }
+    .sample-screenshot {
+        width: 300px;
+    }
+    .centsible-heading, .agb-heading {
+        margin-top: 0;
+    }
+    .finish-it-heading {
+        margin-top: 60px;
+    }
+
+    .contact p {
+        width: 290px;
+    }
 }

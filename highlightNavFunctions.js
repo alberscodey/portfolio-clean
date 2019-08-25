@@ -14,12 +14,12 @@ const designsNavElement = document.getElementById('designs-nav-element');
 //Okay, now as you scroll into a section of the site, a new class will be added to its corresponding nav element
 //Landing
 function enterLanding() {
-    nav.classList.remove('portfolio-gradient');
+    nav.classList.remove('nav-change');
 }
 
 //Skills
 function enterSkills() {
-    nav.classList.add('portfolio-gradient');
+    nav.classList.add('nav-change');
     skillsNavElement.classList.add('highlighted');
     
     //when you scroll into the skills section, the progress bars fill up
@@ -53,7 +53,7 @@ function exitSkills() {
 
 //Designs
 function enterDesigns() {
-    nav.classList.add('portfolio-gradient');
+    nav.classList.add('nav-change');
     designsNavElement.classList.add('highlighted');
 };
 function exitDesigns() {
@@ -86,5 +86,5 @@ function exitFinishIt() {
 
 //Contact
 function enterContact() {
-    nav.classList.add('portfolio-gradient');
+    nav.classList.add('nav-change');
 }
