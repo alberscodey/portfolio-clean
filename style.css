@@ -425,6 +425,7 @@ nav ul {
 .contact p {
     width: 605px;
     margin-top: 68px;
+    margin-bottom: 68px;
     font-size: 26px;
     line-height: 31px;
 }
