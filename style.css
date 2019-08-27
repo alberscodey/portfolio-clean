@@ -439,12 +439,163 @@ footer {
 
 
 
-/* Now for the Case Studies */
+/*** Now for the Case Studies ***/
 .case-study-header {
     margin-top: -20px;
     width: 101vw;
+    background-color: rgba(38, 128, 90, 0.8);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+#centsible-nav-btn {
+    color: #26805A;
 }
 /* Starting with Centsible */
+#centsible-case-study-heading {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.centsible-case-study p, ol {
+    max-width: 658px;
+    margin-bottom: 22px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+}
+.centsible-case-study ol {
+    margin-bottom: 22px;
+    transform: translateX(40px);
+}
+.brief {
+    max-width: 658px;
+    padding-bottom: 128px;
+}
+.kvp-holder {
+    display: flex;
+    flex-wrap: wrap;
+}
+.kvp {
+    width: 50%;
+}
+.key {
+    margin-bottom: 8px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+#value {
+    margin-top: 0;
+    font-family: 'Fira Mono', monospace;
+    font-size: 16px;
+    line-height: 19px;
+}
+.separator {
+    width: 101vw;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+.centsible-separator, .rebecca-quote-separator {
+    background-color: #26805A;
+}
+.explanation-heading {
+    max-width: 100px;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+.external-link {
+    text-decoration: underline;
+}
+.centsible-old, .centsible-new, .centsible-case-study-hero {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+.centsible-old {
+    height: 400px;
+    width: auto;
+}
+.centsible-new {
+    width: 658px;
+    height: auto;
+}
+.centsible-landing-explanation, .centsible-about-us-explanation, .centsible-testimonial-explanation, .centsible-conclusion {
+    padding-bottom: 128px;
+}
+.rebecca-quote-separator {
+    margin-bottom: 80px;
+    padding-top: 150px;
+    flex-direction: column;
+    color: white;
+}
+#rebecca-left-quote {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: bold;
+    font-size: 210px;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+.rebecca-pic {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+#rebecca-bio {
+    margin: 0 0 20px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    opacity: 0.6;
+}
+#rebecca-quote-text {
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 25px;
+}
+
+#interested, #read-on {
+    font-size: 22px;
+    text-align: center;
+}
+
+.conclusion-cta {
+    width: 250px;
+    margin-bottom: 40px;
+    padding: 20px 10px;
+    text-align: center;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    background-color: rgb(38, 128, 90);
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 4px rgba(0, 0, 0, 0.25);
+    transition-duration: 0.25s;
+}
+.conclusion-cta:hover {
+    background-color: #1E6648;
+}
+
+.case-study-footer {
+    margin-top: 100px;
+}
 
 /* AGB Case Study*/
 .place-holder {
@@ -587,6 +738,11 @@ footer {
         margin: auto;
     }
 
+    /* Case Studies */
+    .conclusion-cta {
+        width: 600px;
+    }
+
 }
 
  /* Down to standart ipad size */
@@ -642,6 +798,12 @@ footer {
         width: 300px;
         height: auto;
         padding-top: 60px;
+    }
+
+    /* Case Studies */
+    .centsible-old {
+        height: auto;
+        width: 658px;
     }
 }
 
@@ -775,12 +937,6 @@ footer {
         font-size: 16px;
         line-height: 18px;
     }
-
-    .centsible-case-study {
-        font-size: 16px;
-        line-height: 18px;
-        width: 300px;
-    }
     
     footer {
         padding: 100px 0px;
@@ -788,6 +944,35 @@ footer {
     }
     footer p {
         margin-right: 10px;
+    }
+
+    /* Case Studies */
+    .brief {
+        max-width: 350px;
+    }
+    .centsible-case-study ol {
+        transform: translateX(10px);
+    }
+    #landing-header, #about-us-header, #testimonial-header {
+        width: 300px;
+        height: auto;
+    }
+    .centsible-old, .centsible-new, .centsible-case-study-hero {
+        margin-top: 0px;
+        margin-bottom: 50px;
+        width: 350px;
+        height: auto;
+    }
+    #rebecca-quote-text {
+        width: 350px;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    #interested, #read-on {
+        font-size: 16px;
+    }
+    .conclusion-cta {
+        width: 300px;
     }
 }
 
@@ -900,5 +1085,27 @@ footer {
 
     .contact p {
         width: 290px;
+    }
+
+    /* Case Studies */
+    .brief {
+        max-width: 300px;
+    }
+    #landing-header, #about-us-header, #testimonial-header {
+        width: 300px;
+        height: auto;
+    }
+
+    .centsible-old, .centsible-new, .centsible-case-study-hero {
+        width: 300px;
+        height: auto;
+    }
+    #rebecca-quote-text {
+        width: 300px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .conclusion-cta {
+        width: 280px;
     }
 }
