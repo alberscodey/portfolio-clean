@@ -443,18 +443,20 @@ footer {
 .case-study-header {
     margin-top: -20px;
     width: 101vw;
-    background-color: rgba(38, 128, 90, 0.8);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+#centsible-case-study-header {
+    background-color: rgba(38, 128, 90, 0.8);
 }
 #centsible-nav-btn {
     color: #26805A;
 }
 /* Starting with Centsible */
-#centsible-case-study-heading {
+#centsible-case-study-heading, #agb-case-study-heading {
     margin-top: 100px;
     margin-bottom: 50px;
 }
-.centsible-case-study p, ol {
+.case-study p, ol {
     max-width: 658px;
     margin-bottom: 22px;
     font-family: 'Fira Sans', sans-serif;
@@ -462,7 +464,7 @@ footer {
     font-size: 18px;
     line-height: 24px;
 }
-.centsible-case-study ol {
+.case-study ol {
     margin-bottom: 22px;
     transform: translateX(40px);
 }
@@ -514,7 +516,7 @@ footer {
 .external-link {
     text-decoration: underline;
 }
-.centsible-old, .centsible-new, .centsible-case-study-hero {
+.centsible-old, .centsible-new, .case-study-hero, .agb-screenshot {
     margin-top: 0px;
     margin-bottom: 50px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 4px rgba(0, 0, 0, 0.25);
@@ -523,11 +525,11 @@ footer {
     height: 400px;
     width: auto;
 }
-.centsible-new {
+.centsible-new, .agb-screenshot {
     width: 658px;
     height: auto;
 }
-.centsible-landing-explanation, .centsible-about-us-explanation, .centsible-testimonial-explanation, .centsible-conclusion {
+.landing-explanation, .centsible-about-us-explanation, .centsible-testimonial-explanation, .agb-store-explanation, .conclusion {
     padding-bottom: 128px;
 }
 .rebecca-quote-separator {
@@ -584,12 +586,14 @@ footer {
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.06em;
-    background-color: rgb(38, 128, 90);
     border-radius: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 4px rgba(0, 0, 0, 0.25);
     transition-duration: 0.25s;
 }
-.conclusion-cta:hover {
+.centsible-conclusion-cta {
+    background-color: rgb(38, 128, 90);
+}
+.centsible-conclusion-cta:hover {
     background-color: #1E6648;
 }
 
@@ -598,6 +602,34 @@ footer {
 }
 
 /* AGB Case Study*/
+#agb-case-study-header {
+    background-color: rgba(41, 87, 133, 0.8);
+}
+#agb-nav-btn {
+    color: #295785;
+}
+
+.agb-separator {
+    background-color: #295785;
+    margin-bottom: 80px;
+}
+
+.medium-weight {
+    font-weight: 500;
+}
+
+.agb-conclusion-cta {
+    background-color: #295785;
+}
+.agb-conclusion-cta:hover {
+    background-color: #294D7B;
+}
+
+
+/* Finish.it Case Study */
+.finish-it-case-study .sample-screenshot {
+    margin-top: 150px;
+}
 .place-holder {
     width: 700px;
     margin-bottom: 50px;
@@ -622,10 +654,6 @@ footer {
 }
 
 
-/* Finish.it Case Study */
-.finish-it-case-study .sample-screenshot {
-    margin-top: 150px;
-}
 
 
 /* Now for the fun part: Media Queries! */
@@ -743,13 +771,20 @@ footer {
     }
 
     /* Case Studies */
+    .case-study-header {
+        margin-top: 0px;
+    }
+    #storefront-heading, #conclusion-heading { 
+        max-width: 700px;
+        height: auto;
+    }
     .conclusion-cta {
         width: 600px;
     }
 
 }
 
- /* Down to standart ipad size */
+ /* Down to standard ipad size */
 @media (max-width: 770px) {
 
     /* Landing */
@@ -954,16 +989,17 @@ footer {
     .brief {
         max-width: 350px;
     }
-    .centsible-case-study ol {
+    .case-study ol {
         transform: translateX(10px);
     }
-    #landing-header, #about-us-header, #testimonial-header {
+    #landing-heading, #about-us-heading, #testimonial-heading {
         width: 300px;
         height: auto;
     }
-    .centsible-old, .centsible-new, .centsible-case-study-hero {
-        margin-top: 0px;
-        margin-bottom: 50px;
+    #storefront-heading, #conclusion-heading { 
+        max-width: 300px;
+    }
+    .centsible-old, .centsible-new, .case-study-hero, .agb-screenshot {
         width: 350px;
         height: auto;
     }
@@ -1101,12 +1137,8 @@ footer {
     .brief {
         max-width: 300px;
     }
-    #landing-header, #about-us-header, #testimonial-header {
-        width: 300px;
-        height: auto;
-    }
 
-    .centsible-old, .centsible-new, .centsible-case-study-hero {
+    .centsible-old, .centsible-new, .case-study-hero, .agb-screenshot {
         width: 300px;
         height: auto;
     }

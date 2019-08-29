@@ -4,7 +4,7 @@
 
     <head>
         <title>Codey Albers Portfolio</title>
-        <link href="https://fonts.googleapis.com/css?family=Fira+Code|Rubik+Mono+One|Rubik:400,500,700,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans:300,500,700|Rubik:500,700,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
         <script type="text/javascript" src="highlightNavFunctions.js" async></script>
@@ -12,22 +12,105 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
         
-    <header class="full-width portfolio-gradient case-study-header">
+    <header class="full-width case-study-header" id="agb-case-study-header">
         <nav class="full-width nav" id="nav">
             <div class="nav-left">
                 <a class="nav-logo chunky" href="index.html">C</a>
             </div>
             <div class="nav-right">
                 <ul>
-                    <li><a href="#contact"><div class="contact-nav-link">hire me</div></a></li>
+                    <li><a href="#contact"><div class="contact-nav-link" id="agb-nav-btn">hire me</div></a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <body>
-        <p class="place-holder center rubik-font">The Case Study for this project will be here soon. Check back in a few days to view how I approached this project, and the reasoning behind my major decisions.</p>
-        <a href="index.html"><div class="return-home center portfolio-gradient">back to homepage</div></a>
+    <body class="agb-case-study case-study">
+
+        <div class="agb-intro">
+            <h1 class="hidden">Awesome Gift Baskets Case Study</h1>
+            <img class="center agb-heading" id="agb-case-study-heading" src="Images/AGB-Heading.png">
+            <img class="center case-study-hero" src="Images/AGB.png" alt="An image of Awesome Gift Baskets' landing page.">
+            <div class="brief center">
+                <div class="kvp-holder">
+                    <div class="kvp kvp-1">
+                        <h3 class="key">client name</h3>
+                        <p id="value">Awesome Gift Baskets</p>
+                    </div>
+                    <div class="kvp kvp-2">
+                        <h3 class="key">services offered</h3>
+                        <p id="value">Website Creation</p>
+                    </div>
+                    <div class="kvp kvp-3">
+                        <h3 class="key">project date</h3>
+                        <p id="value">May 2019 - Present</p>
+                    </div>
+                </div>
+                <h3 class="key project-description-heading">project description</h3>
+                <p class="project-description center">The client and I connected through a referral. The kind folks over at Centsible Spending Solutions recommended me to Cher, the owner/operator of this local gift basket company, who requested that I reach out to her regarding some web work.</p>
+                <p class="project-description center">At the time, Awesome Gift Baskets operated mostly through word of mouth, and their ordering system took place largely over the phone. They owned the domain awesomegiftbaskets.net and had an honestly decent draft of a website on GoDaddy's website builder, which Cher and her husband, Terry, had created themselves. But they wanted their website redesigned by a professional before they felt comfortable promoting it.</p>
+                <p class="project-description center">The clients wanted a website that simultaneously felt elegant and friendly. And although the company itself has existed for only a year, Cher has been designing gift baskets for corporate partners and her community for over 30 years. She wanted her website to reflect that experience.</p>
+                <p class="project-description center">I also needed to make sure that I designed the site in a way that allowed Cher and Terry the opportunity to make changes as they saw fit. With a rapidly changing inventory, they need to be able to edit their storefront as products and availability change. Since upcoming holidays generally determine the type of gift basket in demand, Cher and Terry need to be able to edit their featured products and how those products are displayed. In our first meeting, they told me that neither of them would describe themselves as "tech-savvy," so I decided I needed to design with an easy-to-use site builder. However, using site builders can create a host of unexpected design restrictions. These restrictions, as you'll see, presented some interesting challenges.</p>
+                <p class="project-description center">Well-established, elegant, and friendly. These were the three target traits that guided most of my decisions. This website is still a work in progress, and I'm making monthly updates as we continue to strive toward the client's goals for their website. As a side note, I also needed to stick with their brand color, which is a specific shade of brown. A lot of merch and business cards had already been done in that color, and we needed to maintain consistency across the brand.</p>
+            </div>
+        </div>
+
+        <div class="separator agb-separator">
+            <img class="center" id="landing-heading" src="Images/landing-page-header.png">
+        </div>
+
+        <div class="agb-landing-explanation landing-explanation center">
+            <img class="agb-screenshot center" src="Images/AGB.png" alt="An image of Awesome Gift Baskets' landing page.">
+            <img class="agb-screenshot center" src="Images/AGB-Landing-2.PNG" alt="An image of Awesome Gift Baskets' landing page.">
+            <img class="agb-screenshot center" src="Images/AGB-Landing-3.PNG" alt="An image of Awesome Gift Baskets' landing page.">
+            <p class="center">First, let's see how this design stacks up against our overarching target traits, and then I will explain how it meets two specific goals that the client had for their landing page.</p>
+            <p class="center"><a class="medium-weight">A well-established feel.</a> The page hits this target with a strong, confident, title font and with the customer reviews section at the bottom. The titles are written a big, almost authoritative serif font, giving the impression that this company hasn't just been doing business for a while, it's been doing outstanding business for a while. We also gathered some reviews from repeat customers to include at the bottom. The reviews help convey that Awesome Gift Baskets is a stable and trusted brand.</p>
+            <p class="center"><a class="medium-weight">Elegance.</a> Users experience the elegance of this site the moment their browser retrieves the landing page. The large, high-definition hero image combined with an abundance of white space give this page a classy feel and build a subtle aura of luxury.</p>
+            <p class="center"><a class="medium-weight">Friendliness.</a> I used a playful font (Poppins) for the body copy to convey an attitude of friendliness.</p>
+            <p class="center"><a class="medium-weight">Specific Goal #1: A rotating "Featured Products" section.</a> The time of year essentially determines which of Awesome's products will be sold. For example, Valentine's day brings in a lot of business for the romantic-themed baskets. The first products a customer will see are those featured on the landing page. The way I set up this landing, the owners of Awesome Gift Baskets can login to their GoDaddy account and select which products will be placed in the "featured products" section. Now they can ensure that the most relevant products are the first products seen.</p>
+            <p class="center"><a class="medium-weight">Specific Goal #2: Gather emails for marketing campaigns.</a> I included a "Join Our Mailing List" section because Cher and Terry want to utilize email marketing to drive sales during specific parts of the year. As I said in the beginning, this site is still a work in progress, and I don't think we’ve quite hit our target for email signups. So I'm currently working on some exit-intent popups that gather emails in exchange for discount codes.</p>
+        </div>
+
+        <div class="separator agb-separator">
+            <img class="center" id="storefront-heading" src="Images/AGB-storefront-header.png">
+        </div>
+
+        <div class="agb-store-explanation center">
+            <img class="agb-screenshot center" src="Images/AGB-Ready-1.PNG" alt="An image of Awesome Gift Baskets' Ready-to-go-Baskets page.">
+            <img class="agb-screenshot center" src="Images/AGB-Ready-2.PNG" alt="An image of Awesome Gift Baskets' Ready-to-go-Baskets page.">
+            <img class="agb-screenshot center" src="Images/AGB-Ready-3.PNG" alt="An image of Awesome Gift Baskets' Ready-to-go-Baskets page.">
+            <img class="agb-screenshot center" src="Images/AGB-Custom-1.PNG" alt="An image of Awesome Gift Baskets' Custom Baskets page.">
+            <img class="agb-screenshot center" src="Images/AGB-Custom-2.PNG" alt="An image of Awesome Gift Baskets' Custom Baskets page.">
+            <img class="agb-screenshot center" src="Images/AGB-Custom-3.PNG" alt="An image of Awesome Gift Baskets' Custom Baskets page.">
+            <p class="center">The storefront brought its own special set of challenges. But before I get to those let's see how this design stacks up against our overarching target traits and the client's goals for their store.</p>
+            <p class="center"><a class="medium-weight">A well-established feel.</a> The store is searchable, organized into categories, and every item for sale was photographed professionally.</p>
+            <p class="center"><a class="medium-weight">Elegance.</a> I'm going to harken back to all the whitespace. There's just so much breathing room (I'd like for there to be even more, but that's something I'm still working on). When you go to a department store, every square inch of display space will be filled to the brim with items. But when you go to a designer store, you'll see <em>much</em> less clutter. I tried to make this storefront mirror that concept.</p>
+            <p class="center"><a class="medium-weight">Friendliness.</a> A lot of the products are playfully named. You can tell that although this business is serious about offering high-quality products and services, they don't take themselves <em>too</em> seriously. Hats off to Cher and Terry; they're the ones who came up with the names a product descriptions for their entire product selection.</p>
+            <p class="center"><a class="medium-weight">Specific Goal #1: Store needs to offer both premade baskets and custom orders.</a> The majority of Awesome's transactions will ideally come from customers' purchasing the premade inventory, but the majority of Awesome's income is generated by local business and corporate offices special ordering large batches of custom-made baskets for various company events. So I created two pages. One with a shopping cart flow - for the premade inventory - and one with a contact form, that allows customers to reach out and arrange a consultation with Cher regarding custom orders. However, this "custom baskets" page also created GoDaddy challenge #1 (see below).</p>
+            <p class="center"><a class="medium-weight">Specific Goal #2: Products need to be easily added and removed.</a> It's a GoDaddy storefront. This service was made specifically for people who are just starting out, and might not possess much prowess yet in the ecommerce department. Cher and Terry have quite the business acumen, but selling online is relatively new to them. So with the current setup, the folks at Awesome can add and remove inventory with a (somewhat) user-friendly interface. I mention this, though, because solving this problem has created another headache that we're still working to resolve. See GoDaddy challenges #2 and #3 below.</p>
+            <p class="center"><a class="medium-weight">GoDaddy Challenge #1: GoDaddy's website builder was not made for people who know how to build websites from scratch.</a> My initial design for the "Custom Orders" page allowed customers to build their own basket. Users could select items to include in their basket in the same way PapaJohns website users can add and remove toppings on their pizza. Since GoDaddy's website builder offers very little support for developers, this initial intent was never realized. I could've written that into the site if I were designing from scratch, but there was no way to include that level of custom code into the site builder. A GoDaddy dev support rep flat out told me, "Haha! Yeah you can't do that on our site builder."</p>
+            <p class="center"><a class="medium-weight">GoDaddy Challenge #2: Checkout flow.</a> GoDaddy's checkout flow is not the best, and there's no way to customize it. Say goodbye to about 50% of the conversion rate optimization I could be doing with this project.</p>
+            <p class="center"><a class="medium-weight">GoDaddy Challenge #3: Shipping.</a> You can either charge a flat rate per item (which you determine when you add a product to the storefront), or you can offer multiple shipping options for the whole order. If you want each item to carry a shipping charge, then each item can carry one flat rate charge. You can't offer multiple tiers of shipping options. For example, each basket ships for $10 a piece, but there's no option to select among ground shipping, next day air, etc. Or you can offer multiple shipping options, but that applies to the cart as a whole, and not each item. So if I wanted to say ground shipping costs $10, and next day air costs $25, then the customer will pay $25 to next day air their entire cart, whether it's just one basket or 23 baskets. Again I spoke with GoDaddy dev support, and again I was greeted with "Yeah you can't do that on our site builder."</p>
+        </div>
+
+        <div class="separator agb-separator">
+            <img class="center" id="conclusion-heading" src="Images/conclusion-header.png">
+        </div>
+
+        <div class="conclusion center">
+            <p class="center">I could include a section on the "About Us" page, but it would look rather similar to my write-up for the landing page. Ultimately, there's a lot of work left on this site before I can mark this project "complete." We've brought in a marketing expert to provide some guidance as Awesome continues to grow. And I'm going to stay on the project for a while longer, designing ads and ironing out some of the unsolved challenges presented by the webhost and site builder. Like I mentioned before, it's still a work in progress, but the folks over at Awesome Gift Baskets are pleased with my work so far.</p>
+            <p class="center">I'll continue to update this case study as new developments come along, so check back in a few weeks to view our progress.</p>
+        </div>
+
+        <p class="center" id="interested">Interested in working together?</p>
+        <a href="mailto:codeyalbers@gmail.com?subject=Let's Work Together"><div class="conclusion-cta agb-conclusion-cta center">send me an email</div></a>
+        <p class="center" id="read-on">Want to read another case study before making that big decision?</p>
+        <a href="finishit-case-study.html"><div class="conclusion-cta agb-conclusion-cta center">read next case study</div></a>
+
     </body>
+
+    <footer class="full-width case-study-footer">
+        <p class="rubik-font">Copyright Codey Albers &copy; 2019</p>
+    </footer>
 
 </html>
